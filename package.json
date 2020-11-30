@@ -1,0 +1,19 @@
+{
+  "name": "software-testing-assignment",
+  "version": "1.0.0",
+  "description": "Group work for course COMP.SE.200",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.1.0",
+    "mocha": "^8.2.1",
+    "mocha-lcov-reporter": "^1.3.0"
+  }
+}
