@@ -1,3 +1,5 @@
+![Build status](https://travis-ci.com/ArttuYlikotila/software-testing-assignment.svg?branch=master)
+
 # Student template
 
 ## Purpose of this repository
