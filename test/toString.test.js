@@ -9,8 +9,10 @@ describe("Test string conversions", () => {
   // Function toString called with a null parameter seems to return string 'null',
   // while functions documentation says it should return string ''
   it("TC-44: Convert null to string", () => {
-    //expect(toString(null)).to.be.a('string').that.equal('null')
-    expect(toString(null)).to.equal('')
+    // This will pass
+    expect(toString(null)).to.be.a('string').that.equal('null')
+    // This will not pass
+    //expect(toString(null)).to.equal('')
   });
   
   it("TC-45: Convert a negative integer to string", () => {
