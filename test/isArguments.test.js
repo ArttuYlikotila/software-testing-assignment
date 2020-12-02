@@ -4,7 +4,7 @@ import isArguments from "../src/isArguments.js";
 const expect = chai.expect;
 
 // TC-13 and TC-14
-describe("Check if things are arguments objects", () => {
+describe("Check if values are arguments objects", () => {
   it("TC-13: Check if an arguments object returned from a function is an arguments object", () => {
     expect(isArguments(function () { return arguments }())).to.equal(true)
   });

@@ -4,7 +4,7 @@ import isObjectLike from "../src/isObjectLike.js";
 const expect = chai.expect;
 
 // TC-29, TC-30 and TC-31
-describe("Check if things are object-like", () => {
+describe("Check if values are object-like", () => {
   it("TC-29: Check if an array is object-like", () => {
     expect(isObjectLike([1, 2, 3])).to.equal(true)
   });
