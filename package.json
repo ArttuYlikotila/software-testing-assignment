@@ -12,6 +12,14 @@
   "nyc": {
     "all": true,
     "include": ["src/*.js"],
+    "exclude": ["src/at.js", "src/camelCase.js", "src/castArray.js",
+                "src/chunk.js", "src/clamp.js", "src/compact.js", 
+                "src/countBy.js", "src/defaultTo.js", "src/defaultToAny.js",
+                "src/difference.js", "src/divide.js", "src/drop.js",
+                "src/endsWith.js", "src/every.js", "src/filter.js",
+                "src/isArrayLikeObject.js", "src/isBoolean.js", 
+                "src/isDate.js", "src/keys.js", "src/map.js", "src/memoize.js",
+                "src/slice.js", "src/words.js"],
     "extension": [".js"]
   },
   "author": "",
