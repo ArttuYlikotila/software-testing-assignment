@@ -40,6 +40,9 @@
       "src/words.js"
     ]
   },
+  "mocha": {
+    "color": true
+  },
   "author": "",
   "license": "MIT",
   "dependencies": {},
