@@ -32,7 +32,6 @@
       "src/filter.js",
       "src/isArrayLikeObject.js",
       "src/isBoolean.js",
-      "src/isBuffer.js",
       "src/isDate.js",
       "src/keys.js",
       "src/map.js",
