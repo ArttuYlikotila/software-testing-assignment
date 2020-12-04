@@ -2,6 +2,6 @@ language: node_js
 node_js:
   - 14
 
-script:
-  - npm run testcoverage
-  - npm run testcoverage-to-coveralls
+script: npm run testcoverage
+
+after_script: npm run testcoverage-to-coveralls
