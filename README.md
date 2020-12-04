@@ -1,5 +1,5 @@
 ![Build status](https://travis-ci.com/ArttuYlikotila/software-testing-assignment.svg?branch=master)
-
+[![Coverage Status](https://coveralls.io/repos/github/ArttuYlikotila/software-testing-assignment/badge.svg?branch=master)](https://coveralls.io/github/ArttuYlikotila/software-testing-assignment?branch=master)
 # Student template
 
 ## Purpose of this repository
