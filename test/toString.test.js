@@ -10,9 +10,9 @@ describe("Test string conversions", () => {
   // while functions documentation says it should return string ''
   it("TC-44: Convert null to string", () => {
     // This will pass
-    expect(toString(null)).to.be.a('string').that.equal('null')
+    //expect(toString(null)).to.be.a('string').that.equal('null')
     // This will not pass
-    //expect(toString(null)).to.equal('')
+    expect(toString(null)).to.equal('')
   });
   
   it("TC-45: Convert a negative integer to string", () => {

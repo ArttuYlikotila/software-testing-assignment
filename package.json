@@ -6,30 +6,50 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "test-with-coverage": "nyc --reporter=html --reporter=text mocha test --exit",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "test-with-coverage": "c8 mocha --exit && c8 report --reporter=html",
+    "testcoverage": "c8 mocha",
+    "testcoverage-to-lcov": "c8 report --reporter=text-lcov",
+    "testcoverage-to-coveralls": "c8 report --reporter=text-lcov | coveralls",
+    "c8-help": "c8 --help"
   },
-  "nyc": {
-    "all": true,
-    "include": ["src/*.js"],
-    "exclude": ["src/at.js", "src/camelCase.js", "src/castArray.js",
-                "src/chunk.js", "src/clamp.js", "src/compact.js", 
-                "src/countBy.js", "src/defaultTo.js", "src/defaultToAny.js",
-                "src/difference.js", "src/divide.js", "src/drop.js",
-                "src/endsWith.js", "src/every.js", "src/filter.js",
-                "src/isArrayLikeObject.js", "src/isBoolean.js", 
-                "src/isDate.js", "src/keys.js", "src/map.js", "src/memoize.js",
-                "src/slice.js", "src/words.js"],
-    "extension": [".js"]
+  "c8": {
+    "include": [
+      "src/*.js"
+    ],
+    "exclude": [
+      "src/at.js",
+      "src/camelCase.js",
+      "src/castArray.js",
+      "src/chunk.js",
+      "src/clamp.js",
+      "src/compact.js",
+      "src/countBy.js",
+      "src/defaultTo.js",
+      "src/defaultToAny.js",
+      "src/difference.js",
+      "src/divide.js",
+      "src/drop.js",
+      "src/endsWith.js",
+      "src/every.js",
+      "src/filter.js",
+      "src/isArrayLikeObject.js",
+      "src/isBoolean.js",
+      "src/isBuffer.js",
+      "src/isDate.js",
+      "src/keys.js",
+      "src/map.js",
+      "src/memoize.js",
+      "src/slice.js",
+      "src/words.js"
+    ]
   },
   "author": "",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "c8": "^7.3.5",
     "chai": "^4.2.0",
     "coveralls": "^3.1.0",
-    "mocha": "^8.2.1",
-    "mocha-lcov-reporter": "^1.3.0",
-    "nyc": "^15.1.0"
+    "mocha": "^8.2.1"
   }
 }
